@@ -1,0 +1,251 @@
+################################################################################
+
+# ---- animate
+
+# project
+settings.tk-multi-workfiles2.animate:
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+# asset_step
+settings.tk-multi-workfiles2.animate.asset_step:
+  template_publish: animate_asset_publish
+  template_publish_area: asset_publish_area_animate
+  template_work: animate_asset_work
+  template_work_area: asset_work_area_animate
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+# shot_step
+settings.tk-multi-workfiles2.animate.shot_step:
+  template_publish: animate_shot_publish
+  template_publish_area: shot_publish_area_animate
+  template_work: animate_shot_work
+  template_work_area: shot_work_area_animate
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+################################################################################
+
+# ---- premiere
+
+# project
+settings.tk-multi-workfiles2.premiere:
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+# asset_step
+settings.tk-multi-workfiles2.premiere.asset_step:
+  template_publish: premiere_asset_publish
+  template_publish_area: asset_publish_area_premiere
+  template_work: premiere_asset_work
+  template_work_area: asset_work_area_premiere
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+# shot_step
+settings.tk-multi-workfiles2.premiere.shot_step:
+  template_publish: premiere_shot_publish
+  template_publish_area: shot_publish_area_premiere
+  template_work: premiere_shot_work
+  template_work_area: shot_work_area_premiere
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+################################################################################
+
+# ---- illustrator
+
+# project
+settings.tk-multi-workfiles2.illustrator:
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+# asset_step
+settings.tk-multi-workfiles2.illustrator.asset_step:
+  template_publish: illustrator_asset_publish
+  template_publish_area: asset_publish_area_illustrator
+  template_work: illustrator_asset_work
+  template_work_area: asset_work_area_illustrator
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"
+
+# shot_step
+settings.tk-multi-workfiles2.illustrator.shot_step:
+  template_publish: illustrator_shot_publish
+  template_publish_area: shot_publish_area_illustrator
+  template_work: illustrator_shot_work
+  template_work_area: shot_work_area_illustrator
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    hierarchy: [sg_asset_type, code]
+    filters:
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    hierarchy: [sg_sequence, code]
+    sub_hierarchy:
+      entity_type: Task
+      filters:
+      link_field: entity
+      hierarchy: [step]
+  hook_scene_operation: "{engine}/tk-multi-workfiles2/basic/scene_operation.py"
+  location: "@apps.tk-multi-workfiles2.location"

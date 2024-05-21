@@ -1,0 +1,69 @@
+################################################################################
+
+# animate
+settings.tk-multi-shotgunpanel.animate:
+  action_mappings:
+    PublishedFile:
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Animate Project}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Maya Scene}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Photoshop Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Rendered Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Texture}
+    Task:
+    - actions: [assign_task, task_to_ip]
+      filters: {}
+    Version:
+    - actions: [quicktime_clipboard, sequence_clipboard, add_to_playlist]
+      filters: {}
+  actions_hook: "{engine}/tk-multi-shotgunpanel/basic/scene_actions.py"
+  location: "@apps.tk-multi-shotgunpanel.location"
+
+
+# premiere
+settings.tk-multi-shotgunpanel.premiere:
+  action_mappings:
+    PublishedFile:
+    - actions: [add_to_project]
+      filters: {published_file_type: Premiere Project}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Photoshop Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Rendered Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Image}
+    Task:
+    - actions: [assign_task, task_to_ip]
+      filters: {}
+    Version:
+    - actions: [quicktime_clipboard, sequence_clipboard, add_to_playlist]
+      filters: {}
+  actions_hook: "{engine}/tk-multi-shotgunpanel/basic/scene_actions.py"
+  location: "@apps.tk-multi-shotgunpanel.location"
+
+# illustrator
+settings.tk-multi-shotgunpanel.illustrator:
+  action_mappings:
+    PublishedFile:
+    - actions: [add_to_project]
+      filters: {published_file_type: illustrator Project}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Photoshop Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Rendered Image}
+    - actions: [add_to_project, add_to_comp]
+      filters: {published_file_type: Image}
+    Task:
+    - actions: [assign_task, task_to_ip]
+      filters: {}
+    Version:
+    - actions: [quicktime_clipboard, sequence_clipboard, add_to_playlist]
+      filters: {}
+  actions_hook: "{engine}/tk-multi-shotgunpanel/basic/scene_actions.py"
+  location: "@apps.tk-multi-shotgunpanel.location"

@@ -1,0 +1,39 @@
+# Copyright (c) 2017 Shotgun Software Inc.
+#
+# CONFIDENTIAL AND PROPRIETARY
+#
+# This work is provided "AS IS" and subject to the Shotgun Pipeline Toolkit
+# Source Code License included in this distribution package. See LICENSE.
+# By accessing, using, copying or modifying this work you indicate your
+# agreement to the Shotgun Pipeline Toolkit Source Code License. All rights
+# not expressly granted therein are reserved by Shotgun Software Inc.
+#
+
+# location descriptors for engines used in this configuration
+
+################################################################################
+
+# Animate
+engines.tk-animate.location:
+  # type: dev
+  # path: path/to/the folder of integration
+  # or 
+  # type: git
+  # path: /path/to/repo.git
+  # version: v0.2.1
+  # or 
+  type: app_store
+  name: tk-animate
+  version: v0.0.1
+
+# Premiere
+engines.tk-premiere.location:
+  type: app_store
+  name: tk-premiere
+  version: v0.0.1
+
+# Illustrator
+engines.tk-illustrator.location:
+  type: app_store
+  name: tk-illustrator
+  version: v0.0.1

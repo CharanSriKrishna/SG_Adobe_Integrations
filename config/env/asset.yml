@@ -1,0 +1,10 @@
+includes:
+- ./includes/settings/tk-animate.yml
+- ./includes/settings/tk-premiere.yml
+- ./includes/settings/tk-illustrator.yml
+
+engines:
+  tk-animate: "@settings.tk-animate.asset"
+  tk-premiere: "@settings.tk-premiere.asset"
+  tk-illustrator: "@settings.tk-illustrator.asset"
+

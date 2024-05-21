@@ -1,0 +1,103 @@
+paths:
+    ##########################################################################################
+    # Sequence level paths
+    #
+
+
+    ##########################################################################################
+    # Shot level paths
+    #
+
+    #
+    # Animate 
+    #
+
+    # The location of WIP files
+    animate_shot_work:
+        definition: '@shot_root/work/animate/{name}.v{version}.fla'
+    shot_work_area_animate:
+        definition: '@shot_root/work/animate'
+    # The location of published files
+    shot_publish_area_animate:
+        definition: '@shot_root/publish/animate'
+    animate_shot_publish:
+        definition: '@shot_root/publish/animate/{name}.v{version}.fla'
+
+    #
+    # Premiere 
+    #
+
+    # The location of WIP files
+    premiere_shot_work:
+        definition: '@shot_root/work/premiere/{name}.v{version}.prproj'
+    shot_work_area_premiere:
+        definition: '@shot_root/work/premiere'
+    # The location of published files
+    shot_publish_area_premiere:
+        definition: '@shot_root/publish/premiere'
+    premiere_shot_publish:
+        definition: '@shot_root/publish/premiere/{name}.v{version}.prproj'
+
+    #
+    # Illustrator 
+    #
+
+    # The location of WIP files
+    illustrator_shot_work:
+        definition: '@shot_root/work/illustrator/{name}.v{version}.ai'
+    shot_work_area_illustrator:
+        definition: '@shot_root/work/illustrator'
+    # The location of published files
+    shot_publish_area_illustrator:
+        definition: '@shot_root/publish/illustrator'
+    illustrator_shot_publish:
+        definition: '@shot_root/publish/illustrator/{name}.v{version}.ai'
+
+
+    ##########################################################################################
+    # Asset pipeline
+
+    #
+    # Animate
+    #
+
+    # The location of WIP files
+    animate_asset_work:
+        definition: '@asset_root/work/animate/{name}.v{version}.fla'
+    asset_work_area_animate:
+        definition: '@asset_root/work/animate'
+    # The location of published files
+    asset_publish_area_animate:
+        definition: '@asset_root/publish/animate'
+    animate_asset_publish:
+        definition: '@asset_root/publish/animate/{name}.v{version}.fla'
+
+    #
+    # Premiere
+    #
+
+    # The location of WIP files
+    premiere_asset_work:
+        definition: '@asset_root/work/premiere/{name}.v{version}.prproj'
+    asset_work_area_premiere:
+        definition: '@asset_root/work/premiere'
+    # The location of published files
+    asset_publish_area_premiere:
+        definition: '@asset_root/publish/premiere'
+    premiere_asset_publish:
+        definition: '@asset_root/publish/premiere/{name}.v{version}.prproj'
+
+    #
+    # Illustrator
+    #
+
+    # The location of WIP files
+    illustrator_asset_work:
+        definition: '@asset_root/work/illustrator/{name}.v{version}.ai'
+    asset_work_area_illustrator:
+        definition: '@asset_root/work/illustrator'
+    # The location of published files
+    asset_publish_area_illustrator:
+        definition: '@asset_root/publish/illustrator'
+    illustrator_asset_publish:
+        definition: '@asset_root/publish/illustrator/{name}.v{version}.ai'

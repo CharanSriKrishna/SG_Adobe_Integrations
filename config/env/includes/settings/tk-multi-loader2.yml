@@ -1,0 +1,86 @@
+################################################################################
+
+# Animate
+settings.tk-multi-loader2.animate:
+  action_mappings:
+    Photoshop Image: [add_to_project, open_file]
+    Rendered Image: [add_to_project, open_file]
+    Image: [add_to_project, open_file]
+    
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [sg_asset_type, code]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [sg_sequence, code]
+  - caption: My Tasks
+    entity_type: Task
+    filters:
+    - [task_assignees, is, '{context.user}']
+    - [project, is, '{context.project}']
+    hierarchy: [entity, content]
+  actions_hook: "{engine}/tk-multi-loader2/basic/scene_actions.py"
+  publish_filters: [["sg_status_list", "is_not", null]]
+  location: "@apps.tk-multi-loader2.location"
+
+# Premiere
+settings.tk-multi-loader2.premiere:
+  action_mappings:
+    Premiere Project: [import]
+    Photoshop Image: [import]
+    Rendered Image: [import]
+    Image: [import]
+    Movie: [import]
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [sg_asset_type, code]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [sg_sequence, code]
+  - caption: My Tasks
+    entity_type: Task
+    filters:
+    - [task_assignees, is, '{context.user}']
+    - [project, is, '{context.project}']
+    hierarchy: [entity, content]
+  actions_hook: "{engine}/tk-multi-loader2/basic/scene_actions.py"
+  publish_filters: [["sg_status_list", "is_not", null]]
+  location: "@apps.tk-multi-loader2.location"
+
+# illustrator
+settings.tk-multi-loader2.illustrator:
+  action_mappings:
+    illustrator Project: [import]
+    Photoshop Image: [import]
+    Rendered Image: [import]
+    Image: [import]
+  entities:
+  - caption: Assets
+    entity_type: Asset
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [sg_asset_type, code]
+  - caption: Shots
+    entity_type: Shot
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [sg_sequence, code]
+  - caption: My Tasks
+    entity_type: Task
+    filters:
+    - [task_assignees, is, '{context.user}']
+    - [project, is, '{context.project}']
+    hierarchy: [entity, content]
+  actions_hook: "{engine}/tk-multi-loader2/basic/scene_actions.py"
+  publish_filters: [["sg_status_list", "is_not", null]]
+  location: "@apps.tk-multi-loader2.location"

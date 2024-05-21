@@ -1,0 +1,9 @@
+includes:
+- ./includes/settings/tk-animate.yml
+- ./includes/settings/tk-premiere.yml
+- ./includes/settings/tk-illustrator.yml
+
+engines:
+  tk-animate: "@settings.tk-animate.shot"
+  tk-premiere: "@settings.tk-premiere.shot"
+  tk-illustrator: "@settings.tk-illustrator.shot"
