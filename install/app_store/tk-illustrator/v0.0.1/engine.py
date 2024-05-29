@@ -15,11 +15,6 @@ import sgtk
 from sgtk.util.filesystem import ensure_folder_exists
 from tank_vendor import six
 
-def write(val):
-    with open("C:/Users/chara/OneDrive/Desktop/whts_hapn.txt",'a') as log:
-        log.write(val)
-
-
 
 class IllustratorEngine(sgtk.platform.Engine):
     MAX_THUMB_SIZE = 512
@@ -316,7 +311,6 @@ class IllustratorEngine(sgtk.platform.Engine):
             return {"name": "Illustrator", "version": "unknown"}
 
         version = self.adobe.app.version
-        write(str(version))
         # app.illustrator.IllustratorVersion just returns 18.1.1 which is not what users see in the UI
         # extract a more meaningful version from the systemInformation property
         # which gives something like:
@@ -348,7 +342,6 @@ class IllustratorEngine(sgtk.platform.Engine):
         path = self.adobe.app.activeDocument.fullName.parent.fsName
         name = self.adobe.app.activeDocument.name
         path = os.path.normpath(os.path.join(path,name))
-        write(path)
         return path
     
     def save(self, path=None):

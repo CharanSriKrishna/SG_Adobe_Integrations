@@ -151,7 +151,3 @@ class AnimateLauncher(SoftwareLauncher):
 
         # installing the CEP extension.
         startup_utils.ensure_extension_up_to_date(self.logger)
-    
-    def write_details(self, message):
-        with open("C:/Users/chara/OneDrive/Desktop/whts_hapn.txt", "a") as log_file:
-            log_file.write(str(message) + "\n")
